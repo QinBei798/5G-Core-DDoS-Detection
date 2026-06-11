@@ -6,20 +6,44 @@
     "test_split": 0.2,
     "features": {
       "HTTP2_SBI_request_rate": {
-        "normal": { "mean": 100, "std": 30 },
-        "attack": { "mean": 800, "std": 200 }
+        "normal": {
+          "mean": 180,
+          "std": 60
+        },
+        "attack": {
+          "mean": 340,
+          "std": 90
+        }
       },
       "PFCP_session_msg_density": {
-        "normal": { "mean": 50, "std": 15 },
-        "attack": { "mean": 400, "std": 120 }
+        "normal": {
+          "mean": 70,
+          "std": 25
+        },
+        "attack": {
+          "mean": 160,
+          "std": 50
+        }
       },
       "NGAP_auth_anomaly_score": {
-        "normal": { "mean": 0.05, "std": 0.03 },
-        "attack": { "mean": 0.75, "std": 0.20 }
+        "normal": {
+          "mean": 0.15,
+          "std": 0.07
+        },
+        "attack": {
+          "mean": 0.42,
+          "std": 0.14
+        }
       },
       "GTPU_tunnel_throughput_variance": {
-        "normal": { "mean": 0.02, "std": 0.015 },
-        "attack": { "mean": 0.55, "std": 0.22 }
+        "normal": {
+          "mean": 0.1,
+          "std": 0.05
+        },
+        "attack": {
+          "mean": 0.28,
+          "std": 0.11
+        }
       }
     }
   },
@@ -41,6 +65,9 @@
     "roc_curve_path": "roc_curve.png",
     "confusion_matrix_path": "confusion_matrix.png",
     "figure_dpi": 150,
-    "figsize": [8, 6]
+    "figsize": [
+      8,
+      6
+    ]
   }
 }

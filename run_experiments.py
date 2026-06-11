@@ -73,10 +73,10 @@ SCENARIOS = {
     "high_noise": {
         "name": "High Background Noise",
         "mods": {
-            "data.features.HTTP2_SBI_request_rate.normal.std": 90,    # 3×30
-            "data.features.PFCP_session_msg_density.normal.std": 45,   # 3×15
-            "data.features.NGAP_auth_anomaly_score.normal.std": 0.09,  # 3×0.03
-            "data.features.GTPU_tunnel_throughput_variance.normal.std": 0.045,  # 3×0.015
+            "data.features.HTTP2_SBI_request_rate.normal.std": 180,   # 3×60
+            "data.features.PFCP_session_msg_density.normal.std": 75,   # 3×25
+            "data.features.NGAP_auth_anomaly_score.normal.std": 0.21,  # 3×0.07
+            "data.features.GTPU_tunnel_throughput_variance.normal.std": 0.15,  # 3×0.05
         },
     },
 }
